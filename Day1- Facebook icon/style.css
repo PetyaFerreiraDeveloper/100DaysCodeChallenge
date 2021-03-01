@@ -1,0 +1,47 @@
+h1 {
+    padding: 20px;
+    text-align: center;
+    color: #4661b0;
+}
+
+/* create the blue box*/
+.logo {
+    background: #4661b0; 
+    text-indent: -999em;
+    width: 37px;
+    height: 45px;
+    border-radius: 7px;
+    position: relative; /* So we can position the other elements absolutely */
+    overflow: hidden; /* To hide any overflow the other elements might have */
+    border: 8px 8px 0 8px;
+    border-style: solid;
+    border-color: #4661b0;  /*To make it look that the f doesn't reach the end of the box */
+    margin-left: 0.5em;
+}
+
+/* Create the letter f using pseudo elements */
+.logo::before {
+    content: "/20"; /* Pseudo elements need something for content, this means a blank space */
+    position: absolute; /* So we can position it exactly where we want it */
+    background: #4661b0;
+    width: 14px;
+    height: 40px;
+    bottom: -11px;
+    right: -14px;
+    border: 8px solid white;
+    border-radius: 11px;
+}
+
+/* Create the crossing bar to complete the letter f using pseudo elements */
+.logo::after {
+    content: "/20";
+    position: absolute;
+    border-top: 8px solid #fff;
+    border-left: 0px solid transparent;
+    border-right: 1px solid transparent;
+    width: 22px;
+    top: 17px;
+    height: 0;
+    background: white;
+    right: 0;
+}
