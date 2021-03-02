@@ -1,0 +1,35 @@
+h1 {
+    color: #ff0000;
+}
+
+.outer {
+    position: absolute;
+    background-color:#ff0000;
+    height: 70px;
+    width: 70px;
+    top: 100px;
+    left: 20px;
+    border-radius: 4px;
+
+}
+
+.inner {
+    position: absolute;
+    background-color: white;
+    height: 35px;
+    width: 50px;
+    top: 117px;
+    left: 30px;
+    border-radius: 8px
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid #ff0000;
+    position: absolute;
+    top: 127px;
+    left: 50px;
+}
